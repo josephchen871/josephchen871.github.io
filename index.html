@@ -21,24 +21,10 @@ header {
   color: black;
 }
 
-/* Create two columns/boxes that floats next to each other */
-nav {
-  float: left;
-  width: 20%;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 article {
   float: left;
   padding: 20px;
-  width: 60%;
+  width: 80%;
   background-color: #f1f1f1;
 }
 
@@ -80,7 +66,7 @@ footer {
 
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
-  nav, article, pic {
+  article, pic {
     width: 100%;
     height: auto;
   }
@@ -99,18 +85,19 @@ footer {
 </header>
 
 <section>
- <nav>
+ <!-- <nav>
     <ul>
       <li><a href="#Research">Research</a></li>
       <li><a href="CV.pdf" target = "_blank">CV</a></li>
       <li><a href="#Contact">Contact</a></li>
     </ul>
-  </nav>
+  </nav> -->
   
   <article>
     <h1>Hello!</h1>
     <p>I am currently a fifth year Ph.D. student studying mathematics at NYU Courant, intending to graduate spring 2025. My advisor is <a href="https://cims.nyu.edu/~eyal/" target = "_blank">Eyal Lubetzky</a>. I previously studied mathematics in my undergrad at UC Berkeley.</p>
-    <p>I am interested in probability theory, specifically lattice models in statistical mechanics. My work has been on interfaces in the low-temperature Ising and Potts models (and related models, e.g. random cluster, solid-on-solid).</p>
+    <p>I am interested in probability theory, specifically lattice models in statistical mechanics. My work has been on interfaces in the low-temperature Ising and Potts models (and related models, e.g. random cluster, solid-on-solid). Here is my <a href="CV.pdf" target = "_blank">CV</a>.</p>
+    <p>I am on the academic job market in Fall 2024.</p>
   </article>
   <pic><img src="Profile Picture 4.jpg" alt="Profile Picture">
   </pic>
@@ -125,7 +112,9 @@ footer {
 </ul>
 <h4>Talks</h4>
 <ul style="list-style-type:none;">
-<li>BIRS Workshop: Frontiers of Statistical Mechanics and Theoretical Computer Science, mini-talk (Aug. 2024)
+<li>Northeast Probability Seminar, short-talk (Nov. 2024)
+</li>
+<li>BIRS Workshop: Frontiers of Statistical Mechanics and Theoretical Computer Science, short-talk (Aug. 2024)
 </li>
 <li>Northwestern Probability Seminar (Apr. 2024)
 </li>
