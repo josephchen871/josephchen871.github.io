@@ -1,133 +1,117 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>josephchen871@github.io</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="i5ayE-isU__JKkSe4LS5ju6W3INnxJ8-rU3tX2pTbyY" />
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/* Style the header */
-header {
-  padding: 5px;
-  text-align: center;
-  font-size: 20px;
-  color: black;
-}
-
-article {
-  float: left;
-  padding: 20px;
-  width: 80%;
-  background-color: #f1f1f1;
-}
-
-works {
-	float: left;
-  padding: 20px;
-  width: 70%;
-}
-works ul {white-space: pre-wrap;}
-
-
-pic {float: left;
-  width:20%;
-  padding: 20px;
-}
-bigpic {float: left;
-  width:30%;
-  padding: 20px;
-}
-img {
-  width: 100%;
-}
-	
-
-/* Clear floats after the columns */
-section::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Style the footer */
-footer {
-  background-color: #777;
-  padding: 10px;
-  text-align: center;
-  color: white;
-}
-
-/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-@media (max-width: 600px) {
-  article, pic {
-    width: 100%;
-    height: auto;
-  }
-}
-@media (max-width: 600px) {
-  works, bigpic {
-    width: 100%;
-    height: auto;
-  }
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Chen | LPSM Sorbonne</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <style>
+        /* Small tweaks to help Water.css handle layouts */
+        .hero {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            align-items: center;
+        }
+        @media (max-width: 600px) {
+            .hero { grid-template-columns: 1fr; }
+            .hero img { order: -1; } /* Image on top on mobile */
+        }
+        .profile-pic {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .paper-list li {
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
-<header>
-<h2 style="font-family:verdana;text-align:center;">Joseph Chen</h2>
-</header>
 
-<section>
- <!-- <nav>
-    <ul>
-      <li><a href="#Research">Research</a></li>
-      <li><a href="CV.pdf" target = "_blank">CV</a></li>
-      <li><a href="#Contact">Contact</a></li>
-    </ul>
-  </nav> -->
-  
-  <article>
-    <h1>Hello!</h1>
-    <p>I am a Postdoc at Sorbonne Universit&eacute in the <a href="https://www.lpsm.paris/" target = "_blank">LPSM</a> lab, working in the group of <a href="https://www.pietlammers.com/" target = "_blank">Piet Lammers</a>. I am sponsored by <a href="https://sciencesmaths-paris.fr/postdoc-fsmp target = "_blank">FSMP</a>. I recieved my Ph.D. in mathematics in spring 2025 at NYU Courant, where I had the priviledge of being advised by <a href="https://cims.nyu.edu/~eyal/" target = "_blank">Eyal Lubetzky</a>. Previously, I studied mathematics in my undergrad at UC Berkeley.</p>
-    <p>My interest is in studying interfaces/height functions of lattice models in statistical mechanics, including Ising/Potts, Random Cluster, and Discrete Gaussian. Here is my <a href="CV.pdf" target = "_blank">CV</a>.</p>
-  </article>
-  <pic><img src="Profile Picture 4.jpg" alt="Profile Picture">
-  </pic>
-</section>
+    <header>
+        <h1>Joseph Chen</h1>
+        <nav>
+            <a href="#about">About</a> | 
+            <a href="#research">Research</a> | 
+            <a href="#talks">Talks</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section>
-<works>
-<h4 id ="Research">Papers/Preprints</h4>
-<ul style="list-style-type:none;">
-<li><a href = "https://arxiv.org/abs/2509.04333" target = "_blank">The limiting law of the Discrete Gaussian level-lines</a> with E. Lubetzky, <i>Preprint</i>.</li>
-<li><a href = "https://arxiv.org/abs/2409.06079v2" target = "_blank">Logarithmic delocalization of low temperature 3D Ising and Potts interfaces above a hard floor</a> with R. Gheissari and E. Lubetzky, <i>Transactions of the American Mathematical Society,</i> to appear.</li>
-<li><a href = "https://arxiv.org/abs/2406.12040" target = "_blank">Critical wetting in the (2+1)D Solid-On-Solid model</a> with R. Gheissari and E. Lubetzky, <i>Electronic Communications in Probability,</i> 29 (2024), paper no. 59, 12 pp.</li>
-<li><a href = "https://arxiv.org/abs/2306.12560v3" target = "_blank">Extrema of 3D Potts interfaces</a> with E. Lubetzky, <i>Communications in Mathematical Physics,</i> 405 (2024), no. 3, paper no. 86, 81 pp.</li>
-</ul>
-<h4>Talks</h4>
-<ul style="list-style-type:none;">
-<li>Northeast Probability Seminar, short-talk (Nov. 2024)
-</li>
-<li>BIRS Workshop: Frontiers of Statistical Mechanics and Theoretical Computer Science, short-talk (Aug. 2024)
-</li>
-<li>Northwestern Probability Seminar (Apr. 2024)
-</li>
-<li>Courant Student Probability Seminar (Feb. 2023, Oct. 2023, Oct. 2024)
-</li>
-</ul>
-<h4 id="Contact">Contact</h4>
-Feel free to email me at jchen [at] lpsm [dot] paris</works>
-<bigpic><img src="fig_blue_red_interface.jpg" alt="Potts Interfaces"></bigpic>
-</section>
+    <main>
+        <section id="about" class="hero">
+            <article>
+                <h2>Hello!</h2>
+                <p>
+                    I am a Postdoc at Sorbonne Université in the 
+                    <a href="https://www.lpsm.paris/" target="_blank">LPSM</a> lab, 
+                    working in the group of <a href="https://www.pietlammers.com/" target="_blank">Piet Lammers</a>. 
+                    I am sponsored by <a href="https://sciencesmaths-paris.fr/" target="_blank">FSMP</a>. 
+                </p>
+                <p>
+                    I received my Ph.D. in mathematics in spring 2025 at NYU Courant, 
+                    where I had the privilege of being advised by 
+                    <a href="https://cims.nyu.edu/~eyal/" target="_blank">Eyal Lubetzky</a>. 
+                    Previously, I studied mathematics as an undergraduate at UC Berkeley.
+                </p>
+                <p>
+                    My interest is in studying interfaces/height functions of lattice models in statistical mechanics, 
+                    including Ising/Potts, Random Cluster, and Discrete Gaussian. 
+                    Here is my <a href="./cv.pdf" target="_blank"><strong>CV</strong></a>.
+                </p>
+            </article>
+            <aside>
+                <img src="./profile_picture.jpg" alt="Joseph Chen" class="profile-pic">
+            </aside>
+        </section>
+
+        <hr>
+
+        <section id="research">
+            <h2>Papers & Preprints</h2>
+            <ul class="paper-list">
+                <li>
+                    <a href="https://arxiv.org/abs/2509.04333" target="_blank">The limiting law of the Discrete Gaussian level-lines</a> 
+                    with E. Lubetzky, <em>Preprint</em>.
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2409.06079v2" target="_blank">Logarithmic delocalization of low temperature 3D Ising and Potts interfaces above a hard floor</a> 
+                    with R. Gheissari and E. Lubetzky, <em>Transactions of the American Mathematical Society</em>, to appear.
+                </li>
+                <li>
+                    <a href="https://arxiv.org/abs/2406.12040" target="_blank">Critical wetting in the (2+1)D Solid-On-Solid model</a> 
+                    with R. Gheissari and E. Lubetzky, <em>Electronic Communications in Probability</em>, 29 (2024), paper no. 59.
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="talks">
+            <h2>Talks</h2>
+            <ul>
+                <li>Northeast Probability Seminar, short-talk (Nov. 2024)</li>
+                <li>BIRS Workshop: Frontiers of Statistical Mechanics (Aug. 2024)</li>
+                <li>Northwestern Probability Seminar (Apr. 2024)</li>
+                <li>Courant Student Probability Seminar (2023-2024)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to email me at: <code>jchen [at] lpsm [dot] paris</code></p>
+            <figure>
+                <img src="./fig_blue_red_interface.jpg" alt="Potts Interfaces" style="width: 100%; max-width: 500px;">
+                <figcaption>Simulation of Potts Interfaces.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 Joseph Chen</small></p>
+    </footer>
+
 </body>
 </html>
-
-
-
